@@ -1,0 +1,5 @@
+@include('site.includes.header')
+@yield('navbar')
+@yield('content')
+@yield('scripts')
+@include('site.includes.footer')
