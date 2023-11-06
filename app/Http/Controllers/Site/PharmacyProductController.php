@@ -50,10 +50,6 @@ class PharmacyProductController extends Controller
           return redirect()->route('show.products.inPharmacy',$pharmacyId);
     }
 
-    public function editProductInPharmacy($productIdInPharmacy)
-    {
-      $response=$this->pharmacyProductService->getProductIdInPharmacy($productIdInPharmacy);
-    }
 
 
 }

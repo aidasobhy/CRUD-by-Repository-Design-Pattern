@@ -44,7 +44,7 @@ Route::group(['namespace' => 'Site', 'prefix' => 'pharmacies'], function () {
     Route::get('search-product-select2','PharmacyProductController@searchProductSelect2')->name('search.ProductSelect2');
     Route::get('{pharmacyId}/add-product','PharmacyProductController@addProductToPharmacy')->name('add.product.toPharmacy');
     Route::post('{pharmacyId}/store-product','PharmacyProductController@storeProductToPharmacy')->name('store.product.toPharmacy');
-    Route::get('edit-product/{pharmacyProductId}','PharmacyProductController@editProductInPharmacy')->name('edit.product.InPharmacy');
+
 
 });
 

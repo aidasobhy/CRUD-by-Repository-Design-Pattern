@@ -13,7 +13,7 @@
                 <th scope="col">Product Title</th>
                 <th scope="col">Product Price</th>
                 <th scope="col">Product Quantity</th>
-                <th scope="col">Operation</th>
+
             </tr>
             </thead>
             <tbody class="tbody_js">
@@ -24,10 +24,6 @@
                         <td>{{$product->product_title}}</td>
                         <td>{{$product->product_price}}</td>
                         <td>{{$product->product_quantity}}</td>
-                         <td>
-                          <a class="btn btn-info" href="{{route('edit.product.InPharmacy',$product->id)}}">Edit</a>
-                          <a class="btn btn-danger" href="">Delete</a>
-                        </td>
                     </tr>
                 @endforeach
             @endisset

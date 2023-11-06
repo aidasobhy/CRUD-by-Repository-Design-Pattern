@@ -38,16 +38,7 @@ class PharmacyProductRepository implements IPharmacyProduct
 
     }
 
-    public function update($data)
-    {
-        return PharmacyProduct::query()
-            ->where('id','=',$data[id])
-            ->limit(1)
-            ->update([
-                'product_price'    => $data['product_price'],
-                'product_quantity' => $data['product_quantity'],
-            ]);
-    }
+
 
     public function getCheapestProductInPharmacies($productId): Collection
     {
